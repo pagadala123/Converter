@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <a href="convert.html"><h3 style="font-size: xx-large">HOME</h3></a>
+    <style>
+      h3 {
+        color: azure;
+      }
+      body {
+        text-align: center;
+        background-image: url("con1.jpg");
+      }
+      .total {
+        position: relative;
+        bottom: 20px;
+      }
+      h1 {
+        font-size: 35px;
+        color: red;
+      }
+      button {
+        background-color: aqua;
+        width: 120px;
+        height: 40px;
+        font-size: larger;
+      }
+      #hr {
+        width: 200px;
+        height: 40px;
+        border-color: brown;
+        text-align: center;
+      }
+      #min {
+        color: white;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="total">
+      <h1>Hour To Minutes</h1>
+      <input type="text" id="hr" /><br /><br />
+      <button type="button" onclick=" converter()">convert</button>
+      <h2 id="min"></h2>
+    </div>
+
+    <script>
+      function converter() {
+        let input = document.getElementById("hr").value;
+        let output = document.getElementById("min");
+        let c = input * 60;
+        output.innerHTML = c + " Minutes";
+      }
+    </script>
+  </body>
+</html>

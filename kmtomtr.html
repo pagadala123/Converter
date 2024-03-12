@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <a href="convert.html"><h3 style="font-size: xx-large">HOME</h3></a>
+    <style>
+        h3 {
+            color: azure;
+        }
+
+        body {
+            text-align: center;
+            background-image: url("con1.jpg");
+        }
+
+        .total {
+            position: relative;
+            bottom: 20px;
+        }
+
+        h1 {
+
+            font-size: 35px;
+            color: red;
+
+        }
+
+        button {
+
+            background-color: aqua;
+            width: 120px;
+            height: 40px;
+            font-size: larger;
+        }
+
+        #km {
+            width: 200px;
+            height: 40px;
+            border-color: brown;
+            text-align: center;
+        }
+
+        #mtr {
+
+            color: white;
+            font-size: 30px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    </script>
+    <div class="total">
+        <h1>Kilometer To Meter</h1>
+        <input type="text" id="km"><br><br>
+        <button type="button" onclick=" converter()">convert</button>
+        <h2 id="mtr"></h2>
+    </div>
+
+    <script>
+        function converter() {
+            let input = document.getElementById("km").value;
+            let output = document.getElementById("mtr");
+            let c = input * 1000;
+            output.innerHTML = c + " mtr";
+        }
+    </script>
+</body>
+
+</html>
